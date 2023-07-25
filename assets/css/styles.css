@@ -90,7 +90,7 @@ nav ul li {
 
 /* Menu */
 .burger-menu {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -240,7 +240,7 @@ nav ul li {
     margin: 0 auto;
     padding: 0.938rem;
     border-radius: 5px;
-    box-shadow: 0 3px 10px var(--secondary-shadow);
+    box-shadow: 0 3px 10px var(--primary-shadow);
 }
 
 .contact-form-container label {
@@ -252,6 +252,7 @@ nav ul li {
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+  resize: vertical;
 }
   
 .contact-form-container .input-field {
@@ -273,13 +274,13 @@ nav ul li {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: var(--bg-header-footer);
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
   font-weight: var(--bold-font);
   transition: var(--transition);
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .submit-btn:hover {
@@ -324,11 +325,11 @@ footer {
 /* Media queries for responsiveness */
 @media screen and (max-width: 720px) {
   nav {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   }
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    background-color: var(--bg-header-footer);
     flex-direction: column;
     top: 86px;
     left: 10%;
@@ -340,6 +341,7 @@ footer {
 
   nav ul li {
     margin: 8px;
+	 padding-bottom: 20px;
   }
 
   .burger-menu {
