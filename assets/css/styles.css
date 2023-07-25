@@ -13,6 +13,7 @@
   	--primary-shadow: #8b8eaf;
   	--secondary-shadow: #a17a69;
   	--hover-color: #fcfcfc;
+	--link-color: #1a0dab;
   	--bottom-margin: 0.5rem;
   	--bottom-margin-2: 1rem;
   	--line-height: 1.7rem;
@@ -205,9 +206,12 @@ nav ul li {
   padding: 20px;
   margin: 10px;
 }
+.project-link {
+	color: blue;
+}
 .project-link:hover{
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--hover-color);
+  color: var(--link-color);
+  border-bottom: 2px solid var(--link-color);
 }
 
 /* Socials Section 
